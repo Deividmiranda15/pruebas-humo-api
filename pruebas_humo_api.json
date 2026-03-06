@@ -9,47 +9,10 @@
   },
   "item": [
     {
-      "name": "Prueba de Humo Automatica",
-      "event": [
-        {
-          "listen": "test",
-          "script": {
-            "exec": [
-              "pm.test(\"Tiempo de respuesta menor a 1000ms\", function () {\r",
-              "    pm.expect(pm.response.responseTime).to.be.below(1000);\r",
-              "});"
-            ],
-            "type": "text/javascript",
-            "packages": {},
-            "requests": {}
-          }
-        }
-      ],
+      "name": "New Request",
       "request": {
         "method": "GET",
-        "header": [],
-        "url": {
-          "raw": "https://k51qryqov3.execute-api.ap-southeast-2.amazonaws.com/prod/makes/ckl2phsabijs71623vk0?modelsPage=1",
-          "protocol": "https",
-          "host": [
-            "k51qryqov3",
-            "execute-api",
-            "ap-southeast-2",
-            "amazonaws",
-            "com"
-          ],
-          "path": [
-            "prod",
-            "makes",
-            "ckl2phsabijs71623vk0"
-          ],
-          "query": [
-            {
-              "key": "modelsPage",
-              "value": "1"
-            }
-          ]
-        }
+        "header": []
       },
       "response": []
     }
